@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/benabbott85/Project-2-/issues"
   },
-  "homepage": "https://github.com/benabbott85/Project-2-#readme"
+  "homepage": "https://github.com/benabbott85/Project-2-#readme",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
 }
