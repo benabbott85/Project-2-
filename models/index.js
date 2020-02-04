@@ -1,6 +1,6 @@
 var fs = require("fs");
 var path = require("path");
-var sequelize = require("sequelize");
+var Sequelize = require("sequelize");
 var mysql = require("mysql");
 var express = require("express");
 var basename = path.basename(module.filename);
