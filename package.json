@@ -19,7 +19,7 @@
   "homepage": "https://github.com/benabbott85/Project-2-#readme",
   "dependencies": {
     
-    "materialize-css": "^1.0.0-rc.2"
+    "materialize-css": "^1.0.0-rc.2",
 
     "express": "^4.17.1",
     "fs": "0.0.1-security",
