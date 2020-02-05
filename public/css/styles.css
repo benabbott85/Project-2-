@@ -23,6 +23,7 @@ html {
   text-align: center;
 }
 
-#menu {
-  color: teal;
+#logo {
+  font-size: 30pt;
+  padding-right: 10rem;
 }
