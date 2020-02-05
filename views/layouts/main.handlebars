@@ -3,19 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../../public/assets/css/styles.css" type="text/css" />
     <script src="https://kit.fontawesome.com/f1687098ab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>EZ-TravelPlanner</title>
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="/assets/js/cats.js"></script>
 </head>
 
+
+<nav class="nav-extended" style="background-color: rgb(182, 181, 181);" class="menu">
+    <div class="nav-wrapper" style="height: 1rem;">
+        <a href="#" class="brand-logo"> </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
+                style="float: right;">all.location</i></a>
+    </div>
+    <div class="nav-content">
+        <ul class="tabs tabs-transparent">
+            <li class="tab">
+                <a href="#test1"><i class="fas fa-globe-americas" style="padding-right: 2rem;"></i>Home</a>
+            </li>
+            <li class="tab">
+                <a href="#test2"><i class="fas fa-route" style="padding-right:2rem;"></i>Active
+                    <br /></a>
+            </li>
+            <li class="tab">
+                <a href="#test3"><i class="fas fa-plane" style="padding-right: 2rem;"></i>Upcoming/Past Trips</a>
+            </li>
+            <li class="tab">
+                <a href="#test4"><i class="fas fa-calendar-alt" style="padding-right: 2rem;"></i>Calendar</a>
+            </li>
+            <li class="logo"
+                style="float: right; padding-right: 3rem; font-size: 24pt; color:rgb(14, 129, 236); font-family: fantasy;">
+                </i>alLocation: travel/budget/planner</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <body>
-    {{ > header }}
     {{{ body }}}
-    {{ > footer }}
 </body>
+<footer id="footer" class="page-footer"
+    style="background-color: rgb(182, 181, 181); opacity: 95%; height: 8rem; padding-bottom: 0%; padding-top: 0%;"
+    class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12"></div>
+            <div class="col l4 offset-l2 s12"></div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container" style="align-items: center;">
+            © 2014 Copyright Text
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">Cit</a> -->
+        </div>
+    </div>
+</footer>
 
 </html>
