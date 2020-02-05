@@ -1,0 +1,1 @@
+INSERT INTO travel (city_name, trip_cost) VALUES()
