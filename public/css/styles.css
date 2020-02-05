@@ -9,7 +9,8 @@ main {
 }
 
 html {
-  background: url("../assets/search.jpg");
+  background: url("../assets/search2.jpg");
+  size: 50%;
 }
 
 #footer {
@@ -20,4 +21,8 @@ html {
   background-color: red;
   color: white;
   text-align: center;
+}
+
+#menu {
+  color: teal;
 }
