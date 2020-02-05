@@ -1,21 +1,24 @@
 var path = require("path");
+const router = require("express").Router();
+
+const testObj = {
+    message: "works"
+}
 
 
-module.exports = function (app) {
-
-
-    app.get("/", function (req, res) {
-        res.sendFile(path.join(__dirname, "../view/layouts/main.handlebars"));
+    router.get("/test", function (req, res) {
+        // res.sendFile(path.join(__dirname, "../view/layouts/main.handlebars"));
+        res.render("index", testObj)
     });
 
 
-    app.get("/cms", function (req, res) {
+    router.get("/cms", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/cms.html"));
     });
 
 
-    app.get("/blog", function (req, res) {
+    router.get("/blog", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/index.html"));
     });
 
-};
+    module.exports = router
