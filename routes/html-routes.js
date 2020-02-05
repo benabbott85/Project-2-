@@ -1,21 +1,24 @@
 var path = require("path");
+const router = require("express").Router();
 
+router.get("/", function (req, res) {
+    res.render("index")
+});
 
-module.exports = function (app) {
+router.get("/newbudget", function (req, res) {
+    res.render("newbudget")
+})
+router.get("/calendar", function (req, res) {
+    res.render("calendar")
+})
+router.get("/past", function (req, res) {
+    res.render("pasttrip")
+})
+router.get("/upcoming", function (req, res) {
+    res.render("upcoming")
+})
+router.get("/active", function (req, res) {
+    res.render("active")
+})
 
-
-    app.get("/", function (req, res) {
-        res.sendFile(path.join(__dirname, "../view/layouts/main.handlebars"));
-    });
-
-
-    app.get("/cms", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/cms.html"));
-    });
-
-
-    app.get("/blog", function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/index.html"));
-    });
-
-};
+module.exports = router
