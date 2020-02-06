@@ -12,3 +12,5 @@ food_cost INT,
 alcohol_cost INT,
 PRIMARY KEY (id)
 );
+
+
