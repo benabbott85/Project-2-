@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
 VALUES("Paris", 207, 16, 28, 11);
 
@@ -8,31 +7,36 @@ VALUES("Sydney", 237, 18, 44, 18);
 
 INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
 VALUES("New York City", 275, 40, 38, 23);
-=======
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES("Paris", "Libertel Gare de L'Est Francais", 66);
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES("Paris", "Hyatt Regency Paris Etoile", 188);
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Los Angeles", 222, 29, 35, 11);
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES ("Paris", "Molitor Paris - MGallery", 270);
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Las Vegas", 263, 36, 67, 45);
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES("Sydney", "Meriton Suites Kent Street", 114);
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("London", 179, 20, 29, 12);
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES ("Sydney", "Shangri-La Hotel Sydney", 158);
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Rome", 134, 17, 37, 15);
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES ("Sydney", "Pullman Sydney Hyde Park", 158);
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Athens", 78, 13, 20, 9);
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES ("New York City", "Moxy East Village (11th Street)", 116);
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Istanbul", 263, 15, 35, 20);
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES ("New York City", "Casablanca Hotel", 215);
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Glasgow", 95, 20, 33, 8.69)
 
-INSERT INTO travel (city_name, hotel_name, hotel_cost)
-VALUES ("New York City", "Gansevoort Meatpacking NYC", 245);
->>>>>>> 53a9185ab46bec67d6d8c9d6740f78a86de6c44b
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Sao Paolo", 246, 24, 60, 14);
+
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Madrid", 107, 15, 24, 10);
+
+INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+VALUES ("Chicago", 225, 34, 34, 17)
+
+
+
