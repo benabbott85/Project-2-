@@ -6,20 +6,9 @@ router.get("/", function (req, res) {
 });
 
 router.get("/newbudget", function (req, res) {
-    /*
-    db.Trip.findAll({
-        
-        //do stuff with database
+ 
+    res.render("newbudget")})
 
-    }).then(function(dbData) {
-       res.render("newbudget", dbData)
-    });
-    */
-    
-    // res.render("newbudget", {
-    //     test: "hello"
-    // })
-})
 router.get("/calendar", function (req, res) {
     res.render("calendar")
 })
