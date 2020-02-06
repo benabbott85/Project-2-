@@ -1,10 +1,11 @@
 var t = "%" || "+" || "-" || "*" || "/";
 
+var newTrip;
+
 var result = "";
 
 
 var o = a(result);
-console.log((a = "+") == ("+" || "s"));
 var re1 = /^[\*|\/\%].+/;
 function a(str) {
 
@@ -82,3 +83,24 @@ function find(str, str1) {
     return sum;
 }
 
+$("button2").on("click", function (event) {
+    event.preventDefault();
+
+
+    newTrip = {
+        name: $("#name").val().trim(),
+        destination: $("#destination").val().trim(),
+        budget: $("#totalbudget").val().trim()
+    };
+
+    console.log(newTrip)
+    
+    // $.ajax("/activetrip", {
+    //     type: "POST",
+    //     data: newTrip
+    // }).then(
+    //     function () {
+    //         console.log("created new trip");
+    //     }
+    // );
+});

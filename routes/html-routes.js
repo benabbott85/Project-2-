@@ -1,23 +1,10 @@
-var path = require("path");
 const router = require("express").Router();
 
 router.get("/", function (req, res) {
     res.render("index")
 });
 router.get("/newbudget", function (req, res) {
-    /*
-    db.Trip.findAll({
-        
-        //do stuff with database
-
-    }).then(function(dbData) {
-       res.render("newbudget", dbData)
-    });
-    */
-    
-    res.render("newbudget", {
-        test: "hello"
-    })
+    res.render("newbudget")
 })
 router.get("/calendar", function (req, res) {
     res.render("calendar")
