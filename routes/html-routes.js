@@ -1,10 +1,8 @@
-var path = require("path");
 const router = require("express").Router();
 
 router.get("/", function (req, res) {
     res.render("index")
 });
-
 router.get("/newbudget", function (req, res) {
  
     res.render("newbudget")})

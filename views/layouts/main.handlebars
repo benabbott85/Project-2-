@@ -10,7 +10,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>al.location-TravelPlanner</title>
     <script src="https://code.jquery.com/jquery.js"></script>
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
 
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
@@ -27,18 +27,22 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../public/css/styles.css">
+    <script src="/js/calendar.js"></script>
+    <script src="/js/newbudget.js"></script>
+    <script src="/js/active.js"></script>
+    <script src="/js/past.js"></script>
 
 </head>
 
 
-<nav class="nav-extended" style="background-color: rgb(182, 181, 181);" class="menu">
+<nav class="nav-extended" style="background-color: rgb(182, 181, 181); opacity: 90%" class="menu">
     <div class="nav-wrapper" style="height: 1rem;">
         <a href="../../public/assets/logo.png" class="brand-logo"> </a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
                 style="float: right;">al.location</i></a>
     </div>
-    <div class="nav-content" id="f1">
-        <ul class="tabs tabs-transparent" style="height: 65px; width: 113%">
+    <div class="nav-content" id="f1" style="height:73px">
+        <ul class="tabs tabs-transparent" style="height: 65px; width: 110%">
             <li class="tab">
                 <a href="newbudget"><i class="fas fa-globe-americas" style="padding-right: 2rem;"></i>New Trip</a>
             </li>
@@ -53,7 +57,7 @@
                 <a href="calendar"><i class="fas fa-calendar-alt" style="padding-right: 2rem;"></i>Calendar</a>
             </li>
             <img src="/assets/logo.png" alt="logo"
-                style="float: right; padding-right: 11rem; margin-bottom: 20px; margin-top:1px;">
+                style="float: right; padding-right: 9rem; margin-bottom: 2px; margin-top:1px;">
             {{!-- <li class="logo"
                 style="float: right; padding-right: 20rem; font-size: 16pt; color:black font-family: fantasy;">
 
@@ -84,7 +88,7 @@
 </footer>
 <style>
     body {
-        background-image: url("../../public/assets/search2.jpg");
+        background-image: url("/assets/search2.jpg");
         background-repeat: no-repeat;
         background-position: right top;
     }
