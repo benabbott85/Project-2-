@@ -15,7 +15,7 @@ $("li").css("height", height);
 //     }
 //   });
 
-// $("#calendar").calendar({
+// $("calendar.handlebars").calendar({
 //     lang: "en-us",                     // language
 //     sundayFirst: false,             // first week day
 //     years: "80",                    // years diapason
