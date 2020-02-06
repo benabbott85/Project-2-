@@ -16,9 +16,9 @@ router.get("/newbudget", function (req, res) {
     });
     */
     
-    res.render("newbudget", {
-        test: "hello"
-    })
+    // res.render("newbudget", {
+    //     test: "hello"
+    // })
 })
 router.get("/calendar", function (req, res) {
     res.render("calendar")
