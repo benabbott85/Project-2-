@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "development": {
     "username": "root",
     "password": "Greatk8@2020",
@@ -25,30 +24,3 @@
     "dialect": "mysql"
   }
 }
-=======
-    "development": {
-      "username": "root",
-      "password": "Nick9245",
-      "database": "travelfinder_db",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "root",
-      "password": "Nick9245",
-      "database": "travelfinder_db",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "dialect": "mysql"
-    },
-    "production": {
-      "username": "root",
-      "password": "Nick9245",
-      "database": "travelfinder_db",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "dialect": "mysql"
-    }
-  }
->>>>>>> 1174dd247adb04d32560e00de8513430b8268f6c

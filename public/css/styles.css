@@ -5,6 +5,12 @@ body {
   background: url("../assets/search2.jpg");
 }
 
+a {
+  color: white;
+  font-size: large;
+  padding: 5rem;
+}
+
 main {
   flex: 1 0 auto;
 }
@@ -18,12 +24,13 @@ html {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  height: 10%;
   color: white;
   text-align: center;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -39,7 +46,7 @@ html, body {
   top: 0;
   bottom: 0;
   right: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 ul {
@@ -55,18 +62,46 @@ li {
   list-style-type: none;
 }
 
-li:nth-child(n+1):nth-child(-n+7) {
+li:nth-child(n + 1):nth-child(-n + 7) {
   font-weight: 900;
-  color: #e67e22;
+  color: rgb(87, 83, 83);
 }
 
-li:nth-child(n+39), li:nth-child(n+8):nth-child(-n+16) {
+li:nth-child(n + 39),
+li:nth-child(n + 8):nth-child(-n + 16) {
   font-weight: 900;
-  color: rgba(0,0,0,.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(17){
+li:hover:nth-child(n + 8):nth-child(-n + 38),
+li:nth-child(17) {
   border-radius: 5px;
   background-color: #1abc9c;
   color: #ecf0f1;
+}
+
+.back {
+  width: 248px;
+  border-radius: 6px;
+  background-color: darkgrey;
+  float: right;
+  padding: 2rem;
+}
+.input {
+  width: 420px;
+  height: 50px;
+  margin-left: 0px;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: right;
+}
+
+button {
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  border: hidden;
+  margin-top: 0px;
+  font-size: 12px;
 }
