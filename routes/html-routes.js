@@ -1,11 +1,10 @@
-var path = require("path");
 const router = require("express").Router();
 
 router.get("/", function (req, res) {
     res.render("index")
 });
-
 router.get("/newbudget", function (req, res) {
+<<<<<<< HEAD
     /*
     db.Trip.findAll({
         
@@ -19,6 +18,8 @@ router.get("/newbudget", function (req, res) {
     // res.render("newbudget", {
     //     test: "hello"
     // })
+=======
+>>>>>>> 20494ea108594510877c96b288366ef8b584c0c8
     res.render("newbudget")
 })
 router.get("/calendar", function (req, res) {

@@ -37,6 +37,3 @@ VALUES ("Madrid", 107, 15, 24, 10);
 
 INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
 VALUES ("Chicago", 225, 34, 34, 17)
-
-
-
