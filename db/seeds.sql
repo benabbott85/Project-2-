@@ -36,6 +36,7 @@ INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcoh
 VALUES ("Madrid", 107, 15, 24, 10);
 
 INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
+<<<<<<< HEAD
 VALUES ("Chicago", 225, 34, 34, 17);
 
 INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
@@ -49,3 +50,6 @@ VALUES ("South Africa", 70, 15, 20, 7.15);
 
 
 
+=======
+VALUES ("Chicago", 225, 34, 34, 17)
+>>>>>>> master
