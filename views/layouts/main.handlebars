@@ -6,16 +6,28 @@
     <script src="https://kit.fontawesome.com/f1687098ab.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>al.location-TravelPlanner</title>
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
-    <link rel="stylesheet" href="../../public/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
 
     <script src="../../public/js/calendar.js"></script>
     <script src="../../public/js/newbudget.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../public/css/styles.css">
+
 </head>
 
 
@@ -25,8 +37,8 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
                 style="float: right;">al.location</i></a>
     </div>
-    <div class="nav-content">
-        <ul class="tabs tabs-transparent">
+    <div class="nav-content" id="f1">
+        <ul class="tabs tabs-transparent" style="height: 65px; width: 113%">
             <li class="tab">
                 <a href="newbudget"><i class="fas fa-globe-americas" style="padding-right: 2rem;"></i>New Trip</a>
             </li>
@@ -35,12 +47,13 @@
                     <br /></a>
             </li>
             <li class="tab">
-                <a href="pasttrip"><i class="fas fa-plane" style="padding-right: 2rem;"></i>Upcoming/Past Trips</a>
+                <a href="pasttrip"><i class="fas fa-plane" style="padding-right: 2rem;"></i>Next/Past</a>
             </li>
             <li class="tab">
                 <a href="calendar"><i class="fas fa-calendar-alt" style="padding-right: 2rem;"></i>Calendar</a>
             </li>
-            <img src="/assets/logo.png" alt="logo" style="float: right; padding-right: 3rem; top: -5rem">
+            <img src="/assets/logo.png" alt="logo"
+                style="float: right; padding-right: 11rem; margin-bottom: 20px; margin-top:1px;">
             {{!-- <li class="logo"
                 style="float: right; padding-right: 20rem; font-size: 16pt; color:black font-family: fantasy;">
 
@@ -62,7 +75,7 @@
             <div class="col l4 offset-l2 s12"></div>
         </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright" style="min-height: 0rem;">
         <div class="container" style="align-items: center;">
             © 2014 Copyright Text
             <!-- <a class="grey-text text-lighten-4 right" href="#!">Cit</a> -->

@@ -1,17 +1,12 @@
-<div class="row" style="background:grey; padding: 5rem; margin: 3rem; border-radius:6px;">
+<div class="row" style="background:grey; padding: 5rem; padding-bottom:0rem; margin: 3rem; border-radius:6px;">
+
     <form class="col s12">
+        <h6 id="f1" style="color: white;">New Trip Form:</h6>
         <div class="row">
 
-            <h5 style="color: white;">New Trip Form:</h5>
-        </div>
-        <div class="row">
-            <div class="input-field col s4" class="form-group">
-                <input id="budget" type="text" class="validate">
-                <label for="budget">Name:</label>
-            </div>
-            <div class="input-field col s4">
-                <input id="budget" type="text" class="validate">
-                <label for="budget">Destination:</label>
+            <br>
+            <div class="input-field col s6">
+                <img src="/assets/journal.png" alt="journal">
             </div>
             <div class="input-field col s4">
                 <div id="calculator" class="back">
@@ -41,17 +36,23 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="input-field col s7">
+        <div>
+            <label for="meeting">Departure: </label><input id="departure" type="date" value="choose departure" />
+            <label for="meeting">Return: </label><input id="return" type="date" value="choose return" />
+        </div>
+        <br>
+        <br>
+        <div class="row" style="color: black;">
+            <div class="input-field col s4" class="form-group">
                 <input id="budget" type="text" class="validate">
-                <label for="budget">Flight Info:</label>
+                <label for="budget">Name:</label>
             </div>
-            <div class="input-field col s1">
+            <div class="input-field col s4">
                 <input id="budget" type="text" class="validate">
-                <label for="last_name">#Days:</label>
+                <label for="budget">Destination:</label>
             </div>
             <div class="input-field col s4" class="input">
-                <label for="budget">Compare City Costs:</label><br><br>
+                <label for="budget">Compare Cities:</label><br><br>
                 <input id="budget" type="input" class="validate">
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Search</a>
                 <div id="modal1" class="modal">
@@ -66,55 +67,68 @@
             </div>
         </div>
         <div class="row">
-            <div class="input-field col s4">
+            <div class="input-field col s6">
                 <input id="budget" type="text" class="validate">
-                <label for="budget">Flight$:</label>
+                <label for="budget">Flight Info:</label>
             </div>
-            <div class="input-field col s4">
+            <div class="input-field col s6">
                 <input id="budget" type="text" class="validate">
-                <label for="budget">Hotel$:</label>
+                <label for="last_name">Hotel Info:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="budget" type="text" class="validate">
+                <label for="budget">Meals:</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="budget" type="text" class="validate">
+                <label for="budget">Entertainment:</label>
             </div>
 
 
         </div>
         <div class="row">
-            <div class="input-field col s4">
+            <div class="input-field col s6">
                 <input id="budget" type="text" class="validate">
-                <label for="budget">Meals:</label>
+                <label for="budget">Transportation:</label>
             </div>
+            <div class="input-field col s6">
+                <input id="budget" type="text" class="validate">
+                <label for="budget">Car/Gas:</label>
 
-            <div class="row">
-                <div class="input-field col s4">
-                    <input id="budget" type="text" class="validate">
-                    <label for="budget">Entertainment:</label>
-                </div>
-                <div class="input-field col s4">
-                    <input id="budget" type="text" class="validate">
-                    <label for="budget">Transportation:</label>
-                </div>
-                <div class="input-field col s4">
-                    <input id="budget" type="text" class="validate">
-                    <label for="last_name">Misc:</label>
-                </div>
             </div>
-            <div class="row">
-                <div class="input-field col s4">
-                    <input id="budget" type="text" class="validate">
-                    <label for="budget">Total Costs:</label>
-                    <br>
-                    <br>
-                    <br>
-                    <button2 class="btn waves-effect waves-light" type="submit" name="action">Submit
-                        <i class="material-icons right"><i class="fas fa-paper-plane"></i></i>
-                    </button2>
-
-                </div>
-
-
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="budget" type="text" class="validate">
+                <label for="budget">Tips:</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="budget" type="text" class="validate">
+                <label for="budget">Misc:</label>
 
             </div>
         </div>
 
-    </form>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="budget" type="text" class="validate">
+                <label for="budget">Total Costs:</label>
+                <br>
+                <br>
+                <br>
+                <button2 class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right"><i class="fas fa-paper-plane"></i></i>
+                </button2>
+
+            </div>
+
+
+
+        </div>
+</div>
+
+</form>
 </div>
 <script src="/js/newbudget.js"></script>
