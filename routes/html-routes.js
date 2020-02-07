@@ -4,6 +4,7 @@ router.get("/", function (req, res) {
     res.render("index")
 });
 router.get("/newbudget", function (req, res) {
+<<<<<<< HEAD
     /*
     db.Trip.findAll({
         
@@ -17,8 +18,12 @@ router.get("/newbudget", function (req, res) {
     // res.render("newbudget", {
     //     test: "hello"
     // })
+=======
+
+>>>>>>> 81e493980a51865d6eac81e5501fd9beed97a5de
     res.render("newbudget")
 })
+
 router.get("/calendar", function (req, res) {
     res.render("calendar")
 })

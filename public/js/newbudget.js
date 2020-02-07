@@ -25,7 +25,9 @@ function calculator() {
 }
 function resultcalculator() {
     if (input.value.match(re1)) {
-        input.value = "输入错误";
+
+        input.value = "NA";
+
         result = "";
         return false;
     }
@@ -97,6 +99,7 @@ $("#submitbtn").on("click", function (event) {
         destination: $("#destination").val().trim(),
         budget: $("#totalbudget").val().trim()
     };
+<<<<<<< HEAD
 
 
     pdf.create(html,options).toFile(`testing.pdf`, function (error, result){
@@ -106,8 +109,11 @@ $("#submitbtn").on("click", function (event) {
 
 
 
+=======
+>>>>>>> 81e493980a51865d6eac81e5501fd9beed97a5de
     console.log(newTrip)
-    
+
+
     // $.ajax("/activetrip", {
     //     type: "POST",
     //     data: newTrip

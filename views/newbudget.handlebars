@@ -1,18 +1,15 @@
-<div class="row" style="background:grey; padding: 5rem; margin: 3rem; border-radius:6px;">
+<div class="row"
+    style="background:grey; padding: 5rem; padding-bottom:0rem; margin: 3rem; border-radius:6px; opacity: 95%">
     <form class="col s12" id="newTripForm">
+        <h6 style="color: white;">New Trip Form:</h6>
         <div class="row">
+            <br>
+            <div class="input-field col s6">
+                <img src="/assets/journal.png" alt="journal" style="height: 358px;">
 
-            <h5 style="color: white;">New Trip Form:</h5>
-        </div>
-        <div class="row">
-            <div class="input-field col s4" class="form-group">
-                <input id="name" type="text" class="validate">
-                <label for="name">Name:</label>
             </div>
-            <div class="input-field col s4">
-                <input id="destination" type="text" class="validate">
-                <label for="destination">Destination:</label>
-            </div>
+
+
             <div class="input-field col s4">
                 <div id="calculator" class="back">
                     <div><input class="input" type="text" id="input" value="0" readonly="readonly"> </div>
@@ -39,64 +36,43 @@
                         <button onClick="resultcalculator()">=</button>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s7">
-                <input id="flight" type="text" class="validate">
-                <label for="flight">Flight Info:</label>
-            </div>
-            <div class="input-field col s1">
-                <input id="length" type="text" class="validate">
-                <label for="length">#Days:</label>
-            </div>
-            <div class="input-field col s4" class="input">
-                <label for="city">Compare City Costs:</label><br><br>
-                <input id="city" type="input" class="validate">
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Search</a>
-                <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <h4>Content from cities_db</h4>
-                        <p>City info:</p>
-                    </div>
-                    <div class="modal-footer">
+
+
+                {{!-- <div class="modal-footer">
                         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                    </div>
-                </div>
+                    </div> --}}
             </div>
         </div>
+
+        <div class="row" style="color: black;">
+            <div>
+                <label for="meeting">Departure: </label><input id="departure" type="date" value="choose departure" />
+                <label for="meeting">Return: </label><input id="return" type="date" value="choose return" />
+
+            </div>
+
+        </div>
         <div class="row">
-            <div class="input-field col s4">
+            <div class="input-field col s6">
                 <input id="flightcost" type="text" class="validate">
-                <label for="flightcost">Flight$:</label>
+                <label for="flightcost">Flight Info:</label>
             </div>
-            <div class="input-field col s4">
+            <div class="input-field col s6">
                 <input id="hotelcost" type="text" class="validate">
-                <label for="hotelcost">Hotel$:</label>
+                <label for="hotelcost">Hotel Info:</label>
             </div>
-
-
         </div>
         <div class="row">
-            <div class="input-field col s4">
+            <div class="input-field col s6">
                 <input id="mealcost" type="text" class="validate">
                 <label for="mealcost">Meals:</label>
             </div>
+            <div class="input-field col s4">
+                <input id="entertainment" type="text" class="validate">
+                <label for="entertainment">Entertainment:</label>
 
-            <div class="row">
-                <div class="input-field col s4">
-                    <input id="entertainment" type="text" class="validate">
-                    <label for="entertainment">Entertainment:</label>
-                </div>
-                <div class="input-field col s4">
-                    <input id="transport" type="text" class="validate">
-                    <label for="transport">Transportation:</label>
-                </div>
-                <div class="input-field col s4">
-                    <input id="misc" type="text" class="validate">
-                    <label for="misc">Misc:</label>
-                </div>
             </div>
+<<<<<<< HEAD
             <div class="row">
                 <div class="input-field col s4">
                     <input id="totalbudget" type="text" class="validate">
@@ -107,11 +83,54 @@
                     <button class="btn waves-effect waves-light" type="submit" id="submitbtn">Submit
                         <i class="material-icons right"><i class="fas fa-paper-plane"></i></i>
                     </button>
+=======
+>>>>>>> 81e493980a51865d6eac81e5501fd9beed97a5de
 
+        </div>
+        <div class="row">
+
+            <div class="input-field col s6">
+                <input id="transport" type="text" class="validate">
+                <label for="transport">Transportation:</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="car" type="text" class="validate">
+                <label for="car">Car/Gas:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="tips" type="text" class="validate">
+                <label for="tips">Tips:</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="misc" type="text" class="validate">
+                <label for="misc">Misc:</label>
+            </div>
+        </div>
+
+
+        <div class="input-field col s4" class="input">
+            <label for="city">Compare City Costs:</label><br><br>
+            <input id="city" type="input" class="validate">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Search</a>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Content from cities_db</h4>
+                    <p>City info:</p>
                 </div>
-
-
-
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="totalbudget" type="text" class="validate">
+                <label for="totalbudget">Total Cost:</label>
+                <br>
+                <br>
+                <br>
+                <button2 class="btn waves-effect waves-light" type="submit" style="float: right;">Submit
+                    <i class="material-icons right"><i class="fas fa-paper-plane"></i></i>
+                </button2>
             </div>
         </div>
     </form>
