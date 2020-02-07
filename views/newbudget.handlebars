@@ -46,33 +46,29 @@
 
         <div class="row" style="color: black;">
             <div>
-                <label for="meeting">Departure: </label><input id="departure" type="date" value="choose departure" />
-                <label for="meeting">Return: </label><input id="return" type="date" value="choose return" />
+                <label style="color: white" for="meeting">Departure: </label><input id="departure" type="date" value="choose departure" />
+                <label style="color: white" for="meeting">Return: </label><input id="return" type="date" value="choose return" />
 
             </div>
 
         </div>
         <div class="row">
             <div class="input-field col s6">
-                <input id="flightcost" type="text" class="validate">
-                <label for="flightcost">Flight Info:</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="hotelcost" type="text" class="validate">
-                <label for="hotelcost">Hotel Info:</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s6">
-                <input id="mealcost" type="text" class="validate">
-                <label for="mealcost">Meals:</label>
+                <input id="destination" type="text" class="validate">
+                <label style="color: white" for="destination">Destination:</label>
             </div>
             <div class="input-field col s4">
-                <input id="entertainment" type="text" class="validate">
-                <label for="entertainment">Entertainment:</label>
+                <input id="hotelinfo" type="text" class="validate">
+                <label style="color: white" for="hotelinfo">Hotel Info:</label>
 
             </div>
-<<<<<<< HEAD
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="flightinfo" type="text" class="validate">
+                <label style="color: white" for="flightinfo">Link your boarding pass here OR enter in flight number, gate, etc.</label>
+            </div>
+     
             <div class="row">
                 <div class="input-field col s4">
                     <input id="totalbudget" type="text" class="validate">
@@ -83,12 +79,13 @@
                     <button class="btn waves-effect waves-light" type="submit" id="submitbtn">Submit
                         <i class="material-icons right"><i class="fas fa-paper-plane"></i></i>
                     </button>
-=======
->>>>>>> 81e493980a51865d6eac81e5501fd9beed97a5de
+
+
+
+
 
         </div>
-        <div class="row">
-
+        {{!-- <div class="row">
             <div class="input-field col s6">
                 <input id="transport" type="text" class="validate">
                 <label for="transport">Transportation:</label>
@@ -107,9 +104,9 @@
                 <input id="misc" type="text" class="validate">
                 <label for="misc">Misc:</label>
             </div>
-        </div>
+        </div> --}}
 
-
+{{!-- 
         <div class="input-field col s4" class="input">
             <label for="city">Compare City Costs:</label><br><br>
             <input id="city" type="input" class="validate">
@@ -120,11 +117,11 @@
                     <p>City info:</p>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <div class="row">
             <div class="input-field col s6">
                 <input id="totalbudget" type="text" class="validate">
-                <label for="totalbudget">Total Cost:</label>
+                <label style="color: white" for="totalbudget">What is your total starting budget for the trip?</label>
                 <br>
                 <br>
                 <br>
