@@ -1,3 +1,8 @@
+const fs= require ("fs");
+const pdf = require("html-pdf");
+var html = fs.readFileSync('../../../views/partials/newbudget.handlebars', 'utf8');
+var options = { format: 'Letter' };
+
 var t = "%" || "+" || "-" || "*" || "/";
 
 var newTrip;
@@ -83,15 +88,23 @@ function find(str, str1) {
     return sum;
 }
 
-$("button2").on("click", function (event) {
+$("#submitbtn").on("click", function (event) {
     event.preventDefault();
-
+    console.log("testing")
 
     newTrip = {
         name: $("#name").val().trim(),
         destination: $("#destination").val().trim(),
         budget: $("#totalbudget").val().trim()
     };
+
+
+    pdf.create(html,options).toFile(`testing.pdf`, function (error, result){
+        if (error)return console.log(error);
+        console.log(`Itinerary created for testing.pdf`)
+    })    
+
+
 
     console.log(newTrip)
     
