@@ -4,22 +4,7 @@ router.get("/", function (req, res) {
     res.render("index")
 });
 router.get("/newbudget", function (req, res) {
-<<<<<<< HEAD
-    /*
-    db.Trip.findAll({
-        
-        //do stuff with database
-
-    }).then(function(dbData) {
-       res.render("newbudget", dbData)
-    });
-    */
-    
-    // res.render("newbudget", {
-    //     test: "hello"
-    // })
-=======
->>>>>>> 20494ea108594510877c96b288366ef8b584c0c8
+   
     res.render("newbudget")
 })
 router.get("/calendar", function (req, res) {
