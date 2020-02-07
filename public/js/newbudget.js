@@ -1,16 +1,45 @@
+// const fs= require ("fs");
+// const pdf = require("html-pdf");
+// var html = fs.readFileSync('../../../views/partials/newbudget.handlebars', 'utf8');
+// var options = { format: 'Letter' };
+
+$(document).ready(function () {
+    $("button2").on("click", function (event) {
+        event.preventDefault();
+
+        var newTrip = {
+            flight: $("#flightinfo").val().trim(),
+            hotel: $("#hotelinfo").val().trim(),
+            destination: $("#destination").val().trim(),
+            budget: $("#totalbudget").val().trim()
+        };
+        $.ajax({
+            method: "POST",
+            url: "/api/activetrip",
+            data: newTrip
+        })
+        .then(function(data) {
+            // Store data in local storage
+            localStorage.setItem("newTrip", JSON.stringify(data));
+            // Change pages
+            window.location.href = `/activetrip?`;
+        })
+        .catch(function(err) {
+            console.error(err)
+        });
+
+        // pdf.create(html,options).toFile(`testing.pdf`, function (error, result){
+        //     if (error)return console.log(error);
+        //     console.log(`Itinerary created for testing.pdf`)
+        // });
+    });
+});
+
 var t = "%" || "+" || "-" || "*" || "/";
-
-var newTrip;
-
 var result = "";
-
-
 var o = a(result);
 var re1 = /^[\*|\/\%].+/;
-function a(str) {
-
-}
-
+function a(str) {}
 
 function calculator() {
 
@@ -20,7 +49,9 @@ function calculator() {
 }
 function resultcalculator() {
     if (input.value.match(re1)) {
-        input.value = "输入错误";
+
+        input.value = "NA";
+
         result = "";
         return false;
     }
@@ -82,25 +113,3 @@ function find(str, str1) {
     }
     return sum;
 }
-
-$("button2").on("click", function (event) {
-    event.preventDefault();
-
-
-    newTrip = {
-        name: $("#name").val().trim(),
-        destination: $("#destination").val().trim(),
-        budget: $("#totalbudget").val().trim()
-    };
-
-    console.log(newTrip)
-    
-    // $.ajax("/activetrip", {
-    //     type: "POST",
-    //     data: newTrip
-    // }).then(
-    //     function () {
-    //         console.log("created new trip");
-    //     }
-    // );
-});
