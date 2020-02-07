@@ -1,4 +1,3 @@
-// var { Post } = require("../models");
 const router = require("express").Router();
 
 var db =  require("../models");
