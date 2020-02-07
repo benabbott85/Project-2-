@@ -20,7 +20,9 @@ function calculator() {
 }
 function resultcalculator() {
     if (input.value.match(re1)) {
-        input.value = "输入错误";
+
+        input.value = "NA";
+
         result = "";
         return false;
     }
