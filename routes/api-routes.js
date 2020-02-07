@@ -1,47 +1,28 @@
 // var { Post } = require("../models");
 const router = require("express").Router();
 
-    // router.get("/api/posts/:past", function (req, res) {
+var db =  require("../models");
 
-    //     Post.findAll({}).then(posts => {
-    //         res.json(post)
-    //     })
+router.get("/api/activetrip", function (req, res) {
+    res.json({
+        message: "hello"
+    })
+})
 
-    // });
+router.post("/api/activetrip", function (req, res) {
 
-    // router.get("/api/posts/:upcoming", function (req, res) {
+    db.Trips.create({
+        flight: req.body.flight,
+        hotel: req.body.hotel,
+        destination: req.body.destination,
+        budget: req.body.budget
+    }).then(function (dbTrips) {
+        res.json(dbTrips.dataValues);
+    }).catch(function (err) {
+        if (err) throw err;
+    })
 
-    //     Post.findAll({}).then(posts => {
-    //         res.json(post)
-    //     })
+});
 
-    // });
-
-    // router.get("/api/posts/:active", function (req, res) {
-
-    //     Post.findAll({}).then(posts => {
-    //         res.json(post)
-    //     })
-
-    // });
-
-
-    // router.post("/api/posts/:past", function (req, res) {
-    //     Post.create(req.body).then(post => {
-
-    //     })
-    // });
-
-    // router.post("/api/posts/:upcoming", function (req, res) {
-    //     Post.create(req.body).then(post => {
-
-    //     })
-    // });
-
-    // router.post("/api/posts/:active", function (req, res) {
-    //     Post.create(req.body).then(post => {
-
-    //     })
-    // });
 
 module.exports = router
