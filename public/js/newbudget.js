@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $("button2").on("click", function (event) {
         event.preventDefault();
 
@@ -9,15 +8,21 @@ $(document).ready(function () {
             destination: $("#destination").val().trim(),
             budget: $("#totalbudget").val().trim()
         };
-        // $.ajax({
-        //     method: "POST",
-        //     url: "/api/activetrip",
-        //     data: newTrip
-        // }).then(
-        //     function () {
-        //         console.log("created new trip");
-        //     }
-        // );
+        $.ajax({
+            method: "POST",
+            url: "/api/activetrip",
+            data: newTrip
+        })
+        .then(function(data) {
+            // Store data in local storage
+            
+
+            // Change pages
+            window.location.href = `/activetrip?`;
+        })
+        .catch(function(err) {
+            console.error(err)
+        });
     });
 });
 

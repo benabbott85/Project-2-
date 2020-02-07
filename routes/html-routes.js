@@ -7,7 +7,6 @@ router.get("/newbudget", function (req, res) {
 
     res.render("newbudget")
 })
-
 router.get("/calendar", function (req, res) {
     res.render("calendar")
 })
