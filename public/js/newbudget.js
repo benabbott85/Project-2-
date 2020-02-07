@@ -92,9 +92,9 @@ $("button2").on("click", function (event) {
         destination: $("#destination").val().trim(),
         budget: $("#totalbudget").val().trim()
     };
-
     console.log(newTrip)
-    
+
+
     // $.ajax("/activetrip", {
     //     type: "POST",
     //     data: newTrip
