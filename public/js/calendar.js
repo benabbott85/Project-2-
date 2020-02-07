@@ -1,26 +1,71 @@
-var winHeight = $(window).height();
-var height = ( winHeight * 16.6666 ) / 100;
-var lineHeight = height + "px";
+let today = new Date();
+let currentMonth = today.getMonth();
+let currentYear = today.getFullYear();
 
-$("li").css("line-height", lineHeight);
-$("li").css("height", height);
+let months = [
+"Jan", 
+"Feb", 
+"Mar", 
+"Apr", 
+"May", 
+"Jun",
+"Jul", 
+"Aug", 
+"Sep", 
+"Oct", 
+"Nov", 
+"Dec"
+];
 
-// moment().calendar(null, {
-//     sameDay: function (now) {
-//       if (this.isBefore(now)) {
-//         return '[Will Happen Today]';
-//       } else {
-//         return '[Happened Today]';
-//       }
-//     }
-//   });
+let monthAndYear = document.getElementById(`monthAndYear`);
 
-// $("calendar.handlebars").calendar({
-//     lang: "en-us",                     // language
-//     sundayFirst: false,             // first week day
-//     years: "80",                    // years diapason
-//     format: "DD.MM.YYYY",           // date format
-//     onClick: function(date){        // click on day returns date
-//         console.log(date);
-//     }
-// });
+showCalendar(currentMonth, currentYear);
+
+function showCalendar(month, year){
+    let firstDay = new Date(year, month).getDay();
+    let dayInMonth = 32 - new Date(year, month, 32).getDate();
+
+    let tbl = document.getElementById("calbody");
+
+     tbl.innerHTML = ""
+
+     monthAndYear.innerHTML = months[month] + " " + year
+
+    let date = 1;
+
+    for(let i = 0; i < 6; i++) {
+        let row = document.createElement("tr");
+
+        for(let j = 0; j < 7; j++) {
+            if(i === 0 && j < firstDay) {
+                let cell = document.createElement("td");
+                let cellText = document.createTextNode("");
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+            } else if(date > dayInMonth) {
+                 break;   
+            } else {
+                let cell = document.createElement("td");
+                let cellText = document.createTextNode(date);
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+            }
+
+            date++;
+        }
+
+        tbl.appendChild(row);
+    }
+}
+
+function previous(){
+    currentYear = (currentMonth === 0)? currentYear - 1: currentYear;
+    currentMonth = currentMonth === 0? 11: currentMonth -1
+    showCalendar(currentMonth, currentYear);
+}
+
+function next(){
+    currentYear = currentMonth === 11 ? currentYear + 1: currentYear
+    currentMonth = (currentMonth + 1) % 12;
+    showCalendar(currentMonth, currentYear);
+}

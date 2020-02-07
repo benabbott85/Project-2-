@@ -35,7 +35,6 @@ VALUES ("Sao Paolo", 246, 24, 60, 14);
 INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
 VALUES ("Madrid", 107, 15, 24, 10);
 
-<<<<<<< HEAD
 INSERT INTO travel (city_name, hotel_cost, transportation_cost, food_cost, alcohol_cost)
 VALUES ("Chicago", 225, 34, 34, 17);
 
@@ -50,5 +49,3 @@ VALUES ("South Africa", 70, 15, 20, 7.15);
 
 
 
-=======
->>>>>>> 2c7e1f9d4cf677e23849c72f32d713eac62b0fe1
