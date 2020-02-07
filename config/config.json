@@ -1,9 +1,7 @@
 {
   "development": {
     "username": "root",
-
-    "password": "Nick9245",
-
+    "password": "Abs10oulo",
     "database": "travelfinder_db",
     "host": "127.0.0.1",
     "port": 3306,
@@ -11,9 +9,7 @@
   },
   "test": {
     "username": "root",
-
-    "password": "Nick9245",
-
+    "password": "Abs10oulo",
     "database": "travelfinder_db",
     "host": "127.0.0.1",
     "port": 3306,
@@ -21,9 +17,7 @@
   },
   "production": {
     "username": "root",
-
-    "password": "Nick9245",
-
+    "password": "Abs10oulo",
     "database": "travelfinder_db",
     "host": "127.0.0.1",
     "port": 3306,
