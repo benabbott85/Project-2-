@@ -12,12 +12,6 @@ const parseObj = JSON.parse(retreivedObject);
 //     console.log(`Itinerary created for testing.pdf`)
 // });
 
-$("#resF").append(parseObj.flight);
-$("#resH").append(parseObj.hotel);
-$("#resD").append(parseObj.destination);
-$("#resB").append(parseObj.budget);
-$("#resE").append(parseObj.email);
-
 $("#emailBtn").on("click", function (event) {
     event.preventDefault();
     // sendEmail(name, email, message, function () {
@@ -47,3 +41,9 @@ $("#emailBtn").on("click", function (event) {
         data: parseObj
     })
 });
+    
+    
+$("#resF").append(parseObj.destination);
+$("#resH").append(parseObj.hotel);
+$("#resD").append(parseObj.flight);
+$("#resB").append(parseObj.budget);
