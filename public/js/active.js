@@ -16,3 +16,34 @@ $("#resF").append(parseObj.flight);
 $("#resH").append(parseObj.hotel);
 $("#resD").append(parseObj.destination);
 $("#resB").append(parseObj.budget);
+$("#resE").append(parseObj.email);
+
+$("#emailBtn").on("click", function (event) {
+    event.preventDefault();
+    // sendEmail(name, email, message, function () {
+    //     fetch('/send', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({
+    //             name: name,
+    //             email: email,
+    //             message: message
+    //         })
+    //     })
+    //     .then((res) => res.json())
+    //     .then((res) => {
+    //         console.log('here is the response: ', res);
+    //     })
+    //     .catch((err) => {
+    //         console.error('here is the error: ', err);
+    //     })
+    // });
+    $.ajax({
+        method: "POST",
+        url: "/send",
+        data: parseObj
+    })
+});

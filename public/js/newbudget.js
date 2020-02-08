@@ -8,6 +8,7 @@ $(document).ready(function () {
         event.preventDefault();
 
         var newTrip = {
+            email: $("#email").val().trim(),
             flight: $("#flightinfo").val().trim(),
             hotel: $("#hotelinfo").val().trim(),
             destination: $("#destination").val().trim(),
