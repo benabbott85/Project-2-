@@ -12,7 +12,10 @@ const parseObj = JSON.parse(retreivedObject);
 //     console.log(`Itinerary created for testing.pdf`)
 // });
 
-$("#resF").append(parseObj.flight);
-$("#resH").append(parseObj.hotel);
-$("#resD").append(parseObj.destination);
-$("#resB").append(parseObj.budget);
+    
+    
+    $("#resF").append(parseObj.destination);
+    $("#resH").append(parseObj.hotel);
+    $("#resD").append(parseObj.flight);
+    $("#resB").append(parseObj.budget);
+   
