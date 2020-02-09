@@ -43,7 +43,8 @@ $("#emailBtn").on("click", function (event) {
 });
     
     
-$("#resF").append(parseObj.destination);
-$("#resH").append(parseObj.hotel);
-$("#resD").append(parseObj.flight);
-$("#resB").append(parseObj.budget);
+$("#resF").append(`Destination: ${parseObj.destination}`);
+$("#resDates").append(`Depart: ${parseObj.departure} Return: ${parseObj.return}`);
+$("#resH").append(`Hotel: ${parseObj.hotel}`);
+$("#resD").append(`Flight #: ${parseObj.flight}`);
+$("#resB").append(`Budget: $${parseObj.budget}`);
