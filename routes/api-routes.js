@@ -11,6 +11,8 @@ router.get("/api/activetrip", function (req, res) {
 router.post("/api/activetrip", function (req, res) {
 
     db.Trips.create({
+        departure: req.body.departure,
+        return: req.body.return,
         email: req.body.email,
         flight: req.body.flight,
         hotel: req.body.hotel,
@@ -21,7 +23,6 @@ router.post("/api/activetrip", function (req, res) {
     }).catch(function (err) {
         if (err) throw err;
     })
-
 });
 
 
