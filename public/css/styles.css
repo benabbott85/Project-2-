@@ -95,7 +95,9 @@ button {
   margin-top: 0px;
   font-size: 12px;
 }
-
-
-
-
+#emailBtn {
+    width:  90px;
+    height: 40px;
+    margin-left: 400px;
+    background-color: white;
+}

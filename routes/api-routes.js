@@ -30,14 +30,14 @@ router.post("/send", function (req, res, next) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'kyleawkjell@gmail.com',
-            pass: 'Abs10oulo'
+            user: '',
+            pass: ''
         }
     });
 
     const mailOptions = {
         from: req.body.email,
-        to: 'kyleawkjell@gmail.com',
+        to: '',
         subject: `Your trip itinerary!`,
         text: {
             flight: req.body.flight,
