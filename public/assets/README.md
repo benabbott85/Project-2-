@@ -16,7 +16,7 @@ Website will be used for easy travel budget pre-planning, trip access during tra
 
 ## Intended Use
 
-For ease of budget planning for travel as well as while traveling
+For ease of budget planning for travel as well as quick access during travel.
 
 ## Technologies
 
