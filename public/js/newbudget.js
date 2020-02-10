@@ -8,6 +8,9 @@ $(document).ready(function () {
         event.preventDefault();
 
         var newTrip = {
+            departure: $("#departure").val(),
+            return: $("#return").val(),
+            email: $("#email").val().trim(),
             flight: $("#flightinfo").val().trim(),
             hotel: $("#hotelinfo").val().trim(),
             destination: $("#destination").val().trim(),

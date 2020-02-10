@@ -4,6 +4,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 const htmlRoutes = require("./routes/html-routes.js");
 const apiRoutes = require("./routes/api-routes.js");
+const nodemailer = require("nodemailer");
 
 var db = require("./models");
 

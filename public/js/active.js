@@ -12,7 +12,39 @@ const parseObj = JSON.parse(retreivedObject);
 //     console.log(`Itinerary created for testing.pdf`)
 // });
 
-$("#resF").append(parseObj.flight);
-$("#resH").append(parseObj.hotel);
-$("#resD").append(parseObj.destination);
-$("#resB").append(parseObj.budget);
+$("#emailBtn").on("click", function (event) {
+    event.preventDefault();
+    // sendEmail(name, email, message, function () {
+    //     fetch('/send', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({
+    //             name: name,
+    //             email: email,
+    //             message: message
+    //         })
+    //     })
+    //     .then((res) => res.json())
+    //     .then((res) => {
+    //         console.log('here is the response: ', res);
+    //     })
+    //     .catch((err) => {
+    //         console.error('here is the error: ', err);
+    //     })
+    // });
+    $.ajax({
+        method: "POST",
+        url: "/send",
+        data: parseObj
+    })
+});
+    
+    
+$("#resF").append(`Destination: ${parseObj.destination}`);
+$("#resDates").append(`Depart: ${parseObj.departure} Return: ${parseObj.return}`);
+$("#resH").append(`Hotel: ${parseObj.hotel}`);
+$("#resD").append(`Flight #: ${parseObj.flight}`);
+$("#resB").append(`Budget: $${parseObj.budget}`);
