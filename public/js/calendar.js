@@ -65,7 +65,7 @@ function previous(){
 }
 
 function next(){
-    currentYear = currentMonth === 11 ? currentYear + 1: currentYear
+    currentYear = currentMonth === 1 ? currentYear + 1: currentYear
     currentMonth = (currentMonth + 1) % 12;
     showCalendar(currentMonth, currentYear);
 }
